@@ -201,7 +201,7 @@
 				ORGANIZATIONNAME = bunny;
 				TargetAttributes = {
 					2584226017FED18B0013696A = {
-						TestTargetID = 2584223F17FED18A0013696A;
+						TestTargetID = 2584223F17FED18A0013696A /* TableThings */;
 					};
 				};
 			};

@@ -13,14 +13,19 @@
 @end
 
 @implementation VLNaviSub1ViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    self = [super initWithCoder:aDecoder];
+    if(self)
+    {
+        [[NSBundle mainBundle] loadNibNamed:@"VLNaviSub1ViewController" owner:self options:nil];
     }
     return self;
+}
+
+- (void)awakeFromNib
+{
+
 }
 
 - (void)viewDidLoad
