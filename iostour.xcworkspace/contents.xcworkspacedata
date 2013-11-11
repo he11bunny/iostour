@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HttpRPCAndWebview/HttpRPCAndWebview.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PlayWithBlock/PlayWithBlock.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ViewPos/ViewPos.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreDataThings/CoreDataThings.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CollectionThings/CollectionThings.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TabbarThings/TabbarThings.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TableThings/TableThings.xcodeproj">
    </FileRef>
    <FileRef

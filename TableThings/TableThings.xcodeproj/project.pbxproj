@@ -21,6 +21,7 @@
 		2584226517FED18B0013696A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2584224717FED18A0013696A /* UIKit.framework */; };
 		2584226D17FED18B0013696A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2584226B17FED18B0013696A /* InfoPlist.strings */; };
 		2584226F17FED18B0013696A /* TableThingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584226E17FED18B0013696A /* TableThingsTests.m */; };
+		97B2AB611808E8850019D3FC /* TTTable1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B2AB601808E8850019D3FC /* TTTable1ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2584226A17FED18B0013696A /* TableThingsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableThingsTests-Info.plist"; sourceTree = "<group>"; };
 		2584226C17FED18B0013696A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2584226E17FED18B0013696A /* TableThingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableThingsTests.m; sourceTree = "<group>"; };
+		97B2AB5F1808E8850019D3FC /* TTTable1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTable1ViewController.h; sourceTree = "<group>"; };
+		97B2AB601808E8850019D3FC /* TTTable1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTable1ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				2584225917FED18A0013696A /* TTViewController.m */,
 				2584225B17FED18A0013696A /* Images.xcassets */,
 				2584224A17FED18A0013696A /* Supporting Files */,
+				97B2AB5F1808E8850019D3FC /* TTTable1ViewController.h */,
+				97B2AB601808E8850019D3FC /* TTTable1ViewController.m */,
 			);
 			path = TableThings;
 			sourceTree = "<group>";
@@ -201,7 +206,7 @@
 				ORGANIZATIONNAME = bunny;
 				TargetAttributes = {
 					2584226017FED18B0013696A = {
-						TestTargetID = 2584223F17FED18A0013696A /* TableThings */;
+						TestTargetID = 2584223F17FED18A0013696A;
 					};
 				};
 			};
@@ -253,6 +258,7 @@
 				2584225417FED18A0013696A /* TTAppDelegate.m in Sources */,
 				2584225017FED18A0013696A /* main.m in Sources */,
 				2584225A17FED18A0013696A /* TTViewController.m in Sources */,
+				97B2AB611808E8850019D3FC /* TTTable1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +467,7 @@
 				2584227417FED18B0013696A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2584227517FED18B0013696A /* Build configuration list for PBXNativeTarget "TableThingsTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +476,7 @@
 				2584227717FED18B0013696A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
