@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		038429280C1B46678DB0B6AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5359E617BD314F6B9F7AD460 /* libPods.a */; };
 		97CA87F81830CC6E00A93D41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97CA87F71830CC6E00A93D41 /* Foundation.framework */; };
 		97CA87FA1830CC6E00A93D41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97CA87F91830CC6E00A93D41 /* CoreGraphics.framework */; };
 		97CA87FC1830CC6E00A93D41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97CA87FB1830CC6E00A93D41 /* UIKit.framework */; };
@@ -21,6 +22,8 @@
 		97CA88191830CC6E00A93D41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97CA87FB1830CC6E00A93D41 /* UIKit.framework */; };
 		97CA88211830CC6E00A93D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97CA881F1830CC6E00A93D41 /* InfoPlist.strings */; };
 		97CA88231830CC6E00A93D41 /* HttpRPCAndWebviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CA88221830CC6E00A93D41 /* HttpRPCAndWebviewTests.m */; };
+		97CA8836183205CC00A93D41 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97CA8835183205CC00A93D41 /* test.jpg */; };
+		97CA883818320F0D00A93D41 /* test.amr in Resources */ = {isa = PBXBuildFile; fileRef = 97CA883718320F0D00A93D41 /* test.amr */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5359E617BD314F6B9F7AD460 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		55122040E1A74910BC20D8B8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		97CA87F41830CC6E00A93D41 /* HttpRPCAndWebview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpRPCAndWebview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97CA87F71830CC6E00A93D41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		97CA87F91830CC6E00A93D41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,8 @@
 		97CA881E1830CC6E00A93D41 /* HttpRPCAndWebviewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HttpRPCAndWebviewTests-Info.plist"; sourceTree = "<group>"; };
 		97CA88201830CC6E00A93D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		97CA88221830CC6E00A93D41 /* HttpRPCAndWebviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRPCAndWebviewTests.m; sourceTree = "<group>"; };
+		97CA8835183205CC00A93D41 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		97CA883718320F0D00A93D41 /* test.amr */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.amr; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 				97CA87FA1830CC6E00A93D41 /* CoreGraphics.framework in Frameworks */,
 				97CA87FC1830CC6E00A93D41 /* UIKit.framework in Frameworks */,
 				97CA87F81830CC6E00A93D41 /* Foundation.framework in Frameworks */,
+				038429280C1B46678DB0B6AB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +94,7 @@
 				97CA881C1830CC6E00A93D41 /* HttpRPCAndWebviewTests */,
 				97CA87F61830CC6E00A93D41 /* Frameworks */,
 				97CA87F51830CC6E00A93D41 /* Products */,
+				55122040E1A74910BC20D8B8 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +114,7 @@
 				97CA87F91830CC6E00A93D41 /* CoreGraphics.framework */,
 				97CA87FB1830CC6E00A93D41 /* UIKit.framework */,
 				97CA88161830CC6E00A93D41 /* XCTest.framework */,
+				5359E617BD314F6B9F7AD460 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +136,8 @@
 		97CA87FE1830CC6E00A93D41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				97CA883718320F0D00A93D41 /* test.amr */,
+				97CA8835183205CC00A93D41 /* test.jpg */,
 				97CA87FF1830CC6E00A93D41 /* HttpRPCAndWebview-Info.plist */,
 				97CA88001830CC6E00A93D41 /* InfoPlist.strings */,
 				97CA88031830CC6E00A93D41 /* main.m */,
@@ -159,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97CA88261830CC6E00A93D41 /* Build configuration list for PBXNativeTarget "HttpRPCAndWebview" */;
 			buildPhases = (
+				2446F2421FA34312AE4AAF9D /* Check Pods Manifest.lock */,
 				97CA87F01830CC6E00A93D41 /* Sources */,
 				97CA87F11830CC6E00A93D41 /* Frameworks */,
 				97CA87F21830CC6E00A93D41 /* Resources */,
+				18E6316858E94D9B87830204 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,7 +245,9 @@
 			files = (
 				97CA88101830CC6E00A93D41 /* Images.xcassets in Resources */,
 				97CA88021830CC6E00A93D41 /* InfoPlist.strings in Resources */,
+				97CA883818320F0D00A93D41 /* test.amr in Resources */,
 				97CA880B1830CC6E00A93D41 /* Main.storyboard in Resources */,
+				97CA8836183205CC00A93D41 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +260,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18E6316858E94D9B87830204 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2446F2421FA34312AE4AAF9D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		97CA87F01830CC6E00A93D41 /* Sources */ = {
@@ -376,6 +425,7 @@
 		};
 		97CA88271830CC6E00A93D41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55122040E1A74910BC20D8B8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -389,6 +439,7 @@
 		};
 		97CA88281830CC6E00A93D41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55122040E1A74910BC20D8B8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -461,6 +512,7 @@
 				97CA88281830CC6E00A93D41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97CA88291830CC6E00A93D41 /* Build configuration list for PBXNativeTarget "HttpRPCAndWebviewTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +521,7 @@
 				97CA882B1830CC6E00A93D41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

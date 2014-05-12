@@ -9,9 +9,14 @@
 #import "CDAppDelegate.h"
 #import "CDRootViewController.h"
 
+@interface CDAppDelegate ()
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext2;
+@end
+
 @implementation CDAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
+@synthesize managedObjectContext2 = _managedObjectContext2;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
@@ -31,6 +36,7 @@ static CDAppDelegate *_instance;
     NSLog(@"doc path:%@", [self applicationDocumentsDirectory].path);
     _instance = self;
     [self writeData];
+    [self knowDiff];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -42,22 +48,50 @@ static CDAppDelegate *_instance;
 -(void)writeData
 {
     NSManagedObjectContext *context = [[CDAppDelegate singleton] managedObjectContext];
+    NSManagedObjectContext *context2 = [self managedObjectContext2];
     User *user = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:context];
     user.name = @"dd";
     
     RoleA *a = [NSEntityDescription insertNewObjectForEntityForName:@"RoleA" inManagedObjectContext:context];
-    a.name = @"aa";
+    a.name = @"aa11";
     a.attA = @"aamore";
     
     RoleB *b = [NSEntityDescription insertNewObjectForEntityForName:@"RoleB" inManagedObjectContext:context];
     b.name = @"bb";
     b.attB = @"bbmore";
     
+//    [context2 insertObject:a];
+    
     NSLog(@"before save user id: %@", user.objectID);
     NSError *error;
-    [context save:&error];
+    //    [context save:&error];
+//    [context2 save:&error];
     NSLog(@"save info: %@", error);
     NSLog(@"user id: %@", user.objectID);
+}
+
+-(void)knowDiff
+{
+    NSManagedObjectContext *context = [[CDAppDelegate singleton] managedObjectContext];
+    NSManagedObjectContext *context2 = [self managedObjectContext2];
+    NSEntityDescription *descrip = [NSEntityDescription entityForName:@"RoleA" inManagedObjectContext:context];
+    NSFetchRequest *req = [[NSFetchRequest alloc] init];
+    [req setEntity:descrip];
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"name == %@", @"aa"];
+    [req setPredicate:pred];
+    NSError *error;
+    NSArray *res = [context executeFetchRequest:req error:&error];
+    NSLog(@"fetch res: %@", res);
+    RoleA *a = [res lastObject];
+//    a.name = @"aanew";
+    res = [context executeFetchRequest:req error:&error];
+//    RoleA *olda = (RoleA*)[context objectWithID:a.objectID];
+//    RoleA *acopy = [a copy];
+//    RoleA *olda = [res lastObject];
+    RoleA *a2 = [context2 objectWithID:a.objectID];
+    NSLog(@"fetch res: %@", res);
+    NSLog(@"a current %@", a.name);
+//    NSLog(@"olda %@", olda.name);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -119,6 +153,21 @@ static CDAppDelegate *_instance;
     }
     return _managedObjectContext;
 }
+
+- (NSManagedObjectContext *)managedObjectContext2
+{
+    if (_managedObjectContext2 != nil) {
+        return _managedObjectContext2;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        _managedObjectContext2 = [[NSManagedObjectContext alloc] init];
+        [_managedObjectContext2 setPersistentStoreCoordinator:coordinator];
+    }
+    return _managedObjectContext2;
+}
+
 
 // Returns the managed object model for the application.
 // If the model doesn't already exist, it is created from the application's model.
